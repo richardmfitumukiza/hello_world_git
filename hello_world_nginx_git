@@ -1,0 +1,5 @@
+FROM mfitumukiza/hello_world_base_os
+
+RUN apt-get update
+
+RUN apt-get install -y nginx
