@@ -1,0 +1,13 @@
+#cloud-config
+
+users:
+    -gecos: Richard Mfitumukiza
+    -name: richard
+    -ssh_authorized_keys:
+        -ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiLx7xzi2ngI3gfTcANVmnJWSm6aB+UsbuywM44VP4bcKYeKotGVJulTYWmtQ+0Vm5bKgtWfEoXMGIoWK554ESJrb37DEVBLj6P1Q0joQMHe05O5da1aGiL7mnlEEEzSDKALA5mu/n5X+AHDsGQ9EL9UwKkemAq/qoJsJ/aFb74x/A0EFmy80abBJ0dEbA5ULpbJ/RCQrW5H9DHkdMGLd/QSD4XIi5c9TPeJ1RCTJQCKqdfdaMKz8rFC5qH2I5SynTfeo/NTRYwsGw7MZPK1dRTsvxUPvYHHfEWqsE7vuP8TeszwRlKmMIDfgvnc7c/By3HAyOKVLxXhybMbgyZY2r richard.mfitumukiza@Richards-iMac
+    
+    -groups: sudo
+    -sudo: ALL=(ALL) NOPASSWD:ALL
+
+-disable_root: True
+-ssh_pwauth: False
