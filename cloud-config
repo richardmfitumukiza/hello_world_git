@@ -1,5 +1,8 @@
 #cloud-config
 
+-package_update: True
+-package_upgrade: True
+
 users:
     -gecos: Richard Mfitumukiza
     -name: richard
@@ -10,4 +13,4 @@ users:
     -sudo: ALL=(ALL) NOPASSWD:ALL
 
 -disable_root: True
--ssh_pwauth: False
+-package_reboot_if_required: true
